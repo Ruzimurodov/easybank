@@ -1,0 +1,130 @@
+.site-header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    padding: 18px 0;
+    background-color: #fff;
+}
+
+.site-header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header__logo {
+    width: 139px;
+    height: 20px;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__item {
+    margin: 0 15px;
+}
+
+.navbar__link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    color: #9597A5;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        color: $rarely-color;
+    }
+    
+    &::after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 44px;
+        right: 0;
+        width: 100%;
+        max-width: 51px;
+        height: 4px;
+        background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    }
+}
+
+.navbar__item:hover  .navbar__link::after {
+    display: inline-block;
+}
+
+.site-header__hamburg-btn {
+    display: none;
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    font-weight: 24px;
+}
+
+.site-header__link {
+    @include link-reset;
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 8px 34px;
+    transition: opacity 0.4s ease;
+    
+    &:hover {
+        opacity: 0.4;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    
+    .site-header--active .navbar__list {
+        display: inline-block;
+    }
+    
+    .navbar__list {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 68px;
+        left: 0;
+        width: 327px;
+        height: 265px;
+        align-items: center;
+        flex-direction: column;
+        padding: 32px 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    
+    .navbar__item {
+        margin-bottom: 24px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .navbar__link {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.138462px;
+        color: $rarely-color;
+    }
+    
+    .site-header__hamburg-btn {
+        display: block;
+    }
+    
+    .site-header__link {
+        display: none;
+    }
+}

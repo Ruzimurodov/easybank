@@ -1,0 +1,204 @@
+.why-choose {
+    padding: 96px 0;
+    background-color: #F4F5F7;
+}
+
+.why-choose__header {
+    width: 100%;
+    max-width: 635px;
+    margin-bottom: 72px;
+}
+
+.why-choose__heading {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: $rarely-color;
+}
+
+.why-choose__text {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: $gray-color;
+}
+
+.why-choose__list {
+    list-style: none;
+    display: flex;
+}
+
+.why-choose__item {
+    position: relative;
+    max-width: 255px;
+    min-height: 278px;
+    margin-right: 30px;
+    padding-top: 112px;
+    
+    &:first-child::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        background-image: url(../images/cards.svg);
+    }
+    
+    &:nth-child(2)::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        background-image: url(../images/budgeting.svg);
+    }
+    
+    &:nth-child(3)::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        background-image: url(../images/onboarding.svg);
+    }
+    
+    &:last-child::before {
+        margin-right: 0;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        background-image: url(../images/api.svg);
+    }
+}
+
+.why-choose__title {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 26px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: $rarely-color;
+}
+
+.why-choose__discription {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: $gray-color;
+}
+
+
+@media only screen and (max-width: 426px) {
+    
+    .why-choose {
+        padding: 64px 0;
+    }
+    
+    .why-choose__header {
+        margin: 0 auto;
+        margin-bottom: 56px;
+        width: 100%;
+        max-width: 327px;
+    }
+    
+    .why-choose__heading {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.571429px;
+        margin-bottom: 14px;
+    }
+    
+    .why-choose__text {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.234375px;
+        margin: 0;
+    }
+
+    .why-choose__list {
+        width: 100%;
+        max-width: 327px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .why-choose__item {
+        width: 100%;
+        max-width: 327px;
+        min-height: 215px;
+        margin: 0;
+        padding-top: 96px;
+        text-align: center;
+
+        &:first-child::before {
+            top: 0;
+            left: 128px;
+        }
+        
+        &:nth-child(2)::before {
+            top: 0;
+            left: 128px;
+        }
+        
+        &:nth-child(3)::before {
+            top: 0;
+            left: 128px;
+        }
+        
+        &:last-child::before {
+            top: 0;
+            left: 128px;
+        }
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .why-choose__item {
+        
+
+        &:first-child::before {
+            top: 0;
+            left: 105px;
+        }
+        
+        &:nth-child(2)::before {
+            top: 0;
+            left: 105px;
+        }
+        
+        &:nth-child(3)::before {
+            top: 0;
+            left: 105px;
+        }
+        
+        &:last-child::before {
+            top: 0;
+            left: 105px;
+        }
+    }
+}

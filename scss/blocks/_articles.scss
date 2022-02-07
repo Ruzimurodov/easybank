@@ -1,0 +1,135 @@
+.articles {
+    padding: 80px 0;
+}
+
+.articles__heading {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: $rarely-color;
+}
+
+.articles__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.articles__item {
+    max-width: 255px;
+    min-height: 395px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.articles__img {
+    width: 255px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 24px;
+    background-color: #fff;
+}
+
+.info__heading {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: #9597A5;
+}
+
+.info__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+}
+
+.info__link {
+    text-decoration: none;
+    color: $rarely-color;
+    transition: color 0.4s ease;
+    
+    &:hover {
+        color: #30C88F;
+    }
+}
+
+.info__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'PublicSans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    color: $gray-color;
+}
+
+.info__link--active {
+    color: $gray-color;
+}
+
+@media only screen and (max-width: 426px) {
+    
+    .articles {
+        padding-top: 88px;
+        padding-bottom: 112px;
+    }
+    
+    .articles__heading {
+        margin-bottom: 31px;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.571429px;
+    }
+
+    .articles__list {
+        flex-direction: column;
+        width: 100%;
+        max-width: 327px;
+        margin: 0 auto;
+    }
+
+    .articles__item {
+        margin: 0;
+        width: 100%;
+        max-width: 327px;
+        border-radius: 5px;
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .articles__img {
+        width: 327px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .info {
+        padding: 24px 31px;
+    }
+}
